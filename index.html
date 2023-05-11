@@ -1,602 +1,925 @@
 <!DOCTYPE html>
-
-
 <html lang="zh-CN">
-  
-
-    <head>
-      <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
         
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1"
-      />
-      <title> Hexo</title>
-  <meta name="generator" content="hexo-theme-ayer">
-      
-      <link rel="shortcut icon" href="/favicon.ico" />
-       
-<link rel="stylesheet" href="/dist/main.css">
+        Theme Redefine
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-      
-<link rel="stylesheet" href="/css/fonts/remixicon.css">
+    
+<link rel="stylesheet" href="/assets/fonts.css">
 
-      
-<link rel="stylesheet" href="/css/custom.css">
- 
-      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
-       
- 
+    <!--- Font Part-->
+    
+    
+    
+    
 
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
 
-      <!-- mermaid -->
-      
-      <style>
-        .swal2-styled.swal2-confirm {
-          font-size: 1.6rem;
-        }
-      </style>
-    </head>
-  </html>
-</html>
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
-  <div id="app">
+<div class="progress-bar-container">
     
-      
-    <main class="content on">
-      
-<section class="cover">
+
     
-      
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
     
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover1.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Hexo</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
-
-
-<!-- Subtitle -->
-
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['永远不要满足于世界的表象，要敢于探索未知的可能', '', ''],
-        startDelay: 0,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
-  
-<div id="main">
-  <section class="outer">
-  
-  
-  
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content">Hello World!</div>
 </div>
 
 
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
+<main class="page-container">
+
+    
+        
+
+<div class="home-banner-container flex-center">
+    <div class="content flex-center">
+        <div class="description fade-in-down-animation" >
+          Theme Redefine 
+          
+            <p><i id="subtitle"></i></p>
+          
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            $logo-title-font-size = 2rem
+$desktop-search-icon-font-size = 1.5rem
+$navbar-bar-line-height = 2.5px
+$logo-image-box-width = 46px
+
+@import "../../common/variables"
+
+.navbar-container {
+  font-family "Optima Medium", sans-serif
+  width 100%
+  height 100%
+  box-sizing border-box
+  display flex
+  align-items center
+  justify-content center
+  background $nav-color-bg
+  -webkit-backdrop-filter blur(10px)
+  backdrop-filter blur(10px)
+  padding-top $scroll-progress-bar-height
+
+  hover-style(false, 0, 0)
+
+  .navbar-content {
+    position relative
+    height 100%
+    width $main-content-width
+    max-width $content-max-width
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    z-index $z-index-5
+
+
+    &.has-home-banner {
+      max-width $content-max-width * 1.2
     }
 
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
+    +redefine-tablet() {
+      width $main-content-width-tablet
     }
 
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
+    +redefine-mobile() {
+      width $main-content-width-mobile
     }
-</style>
-  
-  <article class="articles">
-    
-    
-    
-    
-    <article
-  id="post-我的博客"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/05/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"
-    >我的博客</a> 
-</h2>
- 
 
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/05/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2023-05-11T10:09:59.000Z" itemprop="datePublished">2023-05-11</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-   
-      <!-- reward -->
-      
-    </div>
-    
+    .left {
+      display flex
+      align-items center
+      transition-t("transform", "0", "0.2", "linear")
 
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
+      .navbar-shrink & {
+        transform scale(0.72)
+        transform-origin left
+      }
 
-   
-   
-  
-</article>
 
-    
-    <article
-  id="post-hello-world"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/05/11/hello-world/"
-    >Hello World</a> 
-</h2>
- 
+      if (hexo-config('defaults.logo') && hexo-config('defaults.logo') != '') {
+        .logo-image {
+          width $logo-image-box-width
+          height $logo-image-box-width
+          margin-right 8px
 
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/05/11/hello-world/" class="article-date">
-  <time datetime="2023-05-11T09:50:39.085Z" itemprop="datePublished">2023-05-11</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+          +redefine-tablet() {
+            width $logo-image-box-width * 0.9
+            height $logo-image-box-width * 0.9
+          }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+          +redefine-mobile() {
+            width $logo-image-box-width * 0.8
+            height $logo-image-box-width * 0.8
+          }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+          img {
+            border-radius 6px
+            width 100%
+          }
+        }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
+      }
 
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
+      .logo-title {
+        font-size $logo-title-font-size
+        font-family "Optima Bold", sans-serif
+        //letter-spacing 1px
+        line-height 1
+        color var(--first-text-color)
 
-   
-   
-  
-</article>
+        h1 {
+          margin 0
+          font-size $logo-title-font-size
+          font-family "Optima Bold", sans-serif
+          //letter-spacing 1px
+          line-height 1
+          color var(--first-text-color)
 
-    
-  </article>
-  
+          +redefine-tablet() {
+            font-size $logo-title-font-size * 0.9
+          }
 
-  
-</section>
-</div>
+          +redefine-mobile() {
+            font-size $logo-title-font-size * 0.8
+          }
 
-      <footer class="footer">
-  <div class="outer">
-    <ul>
-      <li>
-        Copyrights &copy;
-        2015-2023
-        <i class="ri-heart-fill heart_icon"></i> John Doe
-      </li>
-    </ul>
-    <ul>
-      <li>
+        }
+
+        +redefine-tablet() {
+          font-size $logo-title-font-size * 0.9
+        }
+
+        +redefine-mobile() {
+          font-size $logo-title-font-size * 0.8
+        }
+      }
+
+    }
+
+
+    .right {
+
+      .desktop {
+
+        .navbar-list {
+          display flex
+          align-items center
+          
+
+          +redefine-tablet() {
+            display none
+          }
+
+
+          .navbar-item {
+            float left
+            //padding 5px
+            position relative
+            margin-left 30px
+            font-size 1rem
+            cursor pointer
+            color var(--default-text-color)
+
+            a {
+              display block
+              padding 5px
+            }
+
+            &:first-child {
+              margin-left 0
+            }
+
+            a .fa-chevron-down{
+              transform rotate(0deg)
+              transition transform 0.3s ease
+            }
+
+            &:hover a .fa-chevron-down{
+              transform rotate(180deg)
+            }
+
+            &:hover .has-dropdown{
+              &::after {
+                display none !important
+              }
+            }
+
+            &:hover a, .active {
+              &::after {
+                content ''
+                position absolute
+                bottom -5px
+                left 50%
+                width 100%
+                height 2px
+                transform translateX(-50%)
+                background var(--primary-color)
+                transition-t("transform, bottom", "0, 0", "0.2, 0.2", "linear, linear")
+
+                .navbar-shrink & {
+                  bottom -($navbar-shrink-height / 2 - 17)
+                }
+              }
+            }
+            
+            
+
+            &.search {
+              font-size $desktop-search-icon-font-size
+              margin-left 26px
+
+              i {
+                color var(--default-text-color)
+              }
+
+            }
+
+            .sub-menu{
+              position absolute
+              right auto
+              left 50%
+              -webkit-transform translate(-50%, 0)
+              -o-transform translate(-50%, 0)
+              transform translate(-50%, 0)
+              margin-top 0px
+              width auto
+              text-align: center;
+              list-style:none;
+              padding 0 10px 
+              border-radius $redefine-border-radius-large
+              //visibility hidden
+              
+
+              max-height 0px
+              overflow hidden
+              transition-t("all", "0", "0.2", "linear") 
+
+              li a {
+                white-space nowrap
+                color var(--default-text-color)
+                font-size 1rem
+                padding 3px 15px
+                display block
+                text-align center
+                border-radius 8px
+                transition-t("all", "0", "0.2", "linear")
+
+                &:hover {
+                  color var(--primary-color)
+                  background-color var(--third-background-color)
+                }
+              }
+            }
+
+          }
+
+        }
+
+        .navbar-list .navbar-item:hover .sub-menu{
+          //visibility visible
+          max-height 500px
+          transition-t("all", "0", "0.2", "ease")
+          redefine-container(false, 0, 0, 10px, 5px)
+        }
         
-      </li>
-    </ul>
-    <ul>
-      <li>
-        
-      </li>
-    </ul>
-    <ul>
-      
-    </ul>
-    <ul>
-      
-    </ul>
-    <ul>
-      <li>
-        <!-- cnzz统计 -->
-        
-      </li>
-    </ul>
-  </div>
-</footer>    
-    </main>
-    <div class="float_btns">
-      <div class="totop" id="totop">
-  <i class="ri-arrow-up-line"></i>
-</div>
+      }
 
-<div class="todark" id="todark">
-  <i class="ri-moon-line"></i>
-</div>
 
-    </div>
-    <aside class="sidebar on">
-      <button class="navbar-toggle"></button>
-<nav class="navbar">
-  
-  <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
-  </div>
-  
-  <ul class="nav nav-main">
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/">主页</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/archives">归档</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/categories">分类</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/friends">友链</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
-    </li>
-    
-  </ul>
-</nav>
-<nav class="navbar navbar-bottom">
-  <ul class="nav">
-    <li class="nav-item">
-      
-      <a class="nav-item-link nav-item-search"  title="搜索">
-        <i class="ri-search-line"></i>
-      </a>
-      
-      
-      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
-      
-    </li>
-  </ul>
-</nav>
-<div class="search-form-wrap">
-  <div class="local-search local-search-plugin">
-  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
-  <div id="local-search-result" class="local-search-result"></div>
-</div>
-</div>
-    </aside>
-    <div id="mask"></div>
+      .mobile {
+        display flex
+        justify-content space-between
+        align-items center
 
-<!-- #reward -->
-<div id="reward">
-  <span class="close"><i class="ri-close-line"></i></span>
-  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
-  <div class="reward-box">
-    
-    <div class="reward-item">
-      <img class="reward-img" src="/images/alipay.jpg">
-      <span class="reward-type">支付宝</span>
-    </div>
-    
-    
-    <div class="reward-item">
-      <img class="reward-img" src="/images/wechat.jpg">
-      <span class="reward-type">微信</span>
-    </div>
-    
-  </div>
-</div>
-    
-<script src="/js/jquery-3.6.0.min.js"></script>
- 
-<script src="/js/lazyload.min.js"></script>
+        .icon-item {
+          display none
+          position relative
+          cursor pointer
+          font-size 18px
+          margin-left 12px
+          width 20px
+          height 20px
+          color var(--default-text-color)
 
-<!-- Tocbot -->
+          i {
+            color var(--default-text-color)
+          }
 
-<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
-/>
-<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+          &:first-child {
+            margin-left 0
+          }
 
-<script src="/dist/main.js"></script>
+          +redefine-tablet() {
+            display flex
+            justify-content center
+            align-items center
+          }
+        }
 
-<!-- ImageViewer -->
- <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        .navbar-bar {
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
+          .navbar-bar-middle {
+            width 18px
+            height $navbar-bar-line-height
+            position relative
+            background var(--default-text-color)
 
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
+            .navbar-drawer-show & {
+              background transparent
+            }
 
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+
+            &::before, &::after {
+              content ''
+              position absolute
+              left 0
+              width 100%
+              height $navbar-bar-line-height
+              background var(--default-text-color)
+              transition-t("transform", "0", "0.38", "ease")
+            }
+
+
+            &::before {
+              top -6px
+
+              .navbar-drawer-show & {
+                transform translateY(6px) rotate(45deg)
+              }
+            }
+
+
+            &::after {
+              bottom -6px
+
+              .navbar-drawer-show & {
+                transform translateY(-6px) rotate(-45deg)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .navbar-drawer {
+    width 100%
+    padding $navbar-height 0 20px 0
+    position absolute
+    top 0
+    left 0
+    transform scaleY(0)
+    transform-origin top
+    z-index $z-index-2
+    background var(--background-color)
+    transition-t("transform", "0", "0.38", "ease")
+
+    .navbar-drawer-show & {
+      transform scaleY(1)
+    }
+
+    .drawer-navbar-list {
+      display flex
+      flex-direction column
+      justify-content flex-start
+      align-items center
+
+      .drawer-navbar-item {
+        font-family: "Optima Bold", sans-serif
+        font-size 1rem
+        margin 6px 0
+        height 32px
+
+        a {
+          padding 6px 20px
+          border-radius 20px
+          color var(--default-text-color)
+
+          &:hover {
+            color var(--second-text-color)
+            border 1px solid var(--default-text-color)
+          }
+
+
+          &.active {
+            border 1px solid var(--default-text-color)
+            color var(--second-text-color)
+          }
+        }
+
+        .has-dropdown {
+          font-family: "Optima Bold", sans-serif
+        }
+
+        a .fa-chevron-down{
+          transform rotate(0deg)
+          transition transform 0.3s ease
+        }
+
+        &:hover a .fa-chevron-down{
+          transform rotate(180deg)
+        }
+
+        &:hover .has-dropdown{
+          &::after {
+            display none !important
+          }
+        }
+      }
+
+      .dropdown-item {
+        font-size 1rem
+        margin 6px 0
+        height 16px
+
+        a {
+          padding 6px 20px
+          border-radius 20px
+          color var(--default-text-color)
+
+          &:hover {
+            color var(--second-text-color)
+            border 1px solid var(--default-text-color)
+          }
+
+
+          &.active {
+            border 1px solid var(--default-text-color)
+            color var(--second-text-color)
+          }
+        }
+      }
+
+      .sub-menu{
+        position relative
+        margin-top 8px
+        width 100%
+        text-align: center;
+        list-style: none;
+        padding 0 10px 
+        border-radius $redefine-border-radius-large
+        //float left
+      }
+    }
+  }
+
+
+  .window-mask {
+    position absolute
+    top 0
+    width 100%
+    height 100vh
+    background rgba(0, 0, 0, 0.4)
+    z-index $z-index-1
+    visibility hidden
+    opacity 0
+    transition-t("transform, opacity", "0, 0", "0.38, 0.38", "ease, ease")
+
+    .navbar-drawer-show & {
+      visibility visible
+      opacity 1
+    }
+  }
+
+}
+
+.navbar-drawer-show {
+  overflow hidden
+}
+
         </div>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
+        <div class="main-content-body">
 
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
+            
+                <div class="home-sidebar-container fade-in-down-animation">
+    <div class="sticky-container">
+        
+            
+            <div class="sidebar-content" >
+                <div class="avatar">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="author">
+                    <div class="name">The Redefine Team</div>
+                    
+                        <div class="label">Lv1</div>
+                    
+                </div>
+                <div class="statistics">
+                    <a class="item" href="/tags">
+                        <div class="number">0</div>
+                        <div class="label">标签</div>
+                    </a>
+                    <a class="item" href="/categories">
+                        <div class="number">0</div>
+                        <div class="label">分类</div>
+                    </a>
+                    <a class="item" href="/archives">
+                        <div class="number">2</div>
+                        <div class="label">文章</div>
+                    </a>
                 </div>
             </div>
+        
 
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
+    </div>
+</div>
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/05/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">
+                        我的博客
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu May 11 2023 18:09:59 GMT+0800">
+                
+                    2023-05-11
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2023/05/11/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">阅读全文<span class="seo-reader-text">我的博客</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/05/11/hello-world/">
+                        Hello World
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu May 11 2023 17:50:39 GMT+0800">
+                
+                    2023-05-11
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2023/05/11/hello-world/">阅读全文<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator">
+        <div class="paginator">
+    <span class="page-number current">1</span>
+</div>
+
+    </div>
+</div>
+
+                
+
             </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
+            
+            
 
         </div>
 
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">The Redefine Team</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.3</a>
+        </div>
+        
+        
+        
+            <div id="start_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
     </div>
 
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
 </div>
 
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+    </div>
 
-<script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
-
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
-    }
-    viewer_init()
-</script> 
-<!-- MathJax -->
-
-<!-- Katex -->
-
-<!-- busuanzi  -->
-
-<!-- ClickLove -->
-
-<!-- ClickBoom1 -->
-
-<!-- ClickBoom2 -->
-
-<!-- CodeCopy -->
- 
-<link rel="stylesheet" href="/css/clipboard.css">
- <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
-<script>
-  function wait(callback, seconds) {
-    var timelag = null;
-    timelag = window.setTimeout(callback, seconds);
-  }
-  !function (e, t, a) {
-    var initCopyCode = function(){
-      var copyHtml = '';
-      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
-      copyHtml += '</button>';
-      $(".highlight .code pre").before(copyHtml);
-      $(".article pre code").before(copyHtml);
-      var clipboard = new ClipboardJS('.btn-copy', {
-        target: function(trigger) {
-          return trigger.nextElementSibling;
-        }
-      });
-      clipboard.on('success', function(e) {
-        let $btn = $(e.trigger);
-        $btn.addClass('copied');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-checkbox-circle-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPIED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-checkbox-circle-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-      clipboard.on('error', function(e) {
-        e.clearSelection();
-        let $btn = $(e.trigger);
-        $btn.addClass('copy-failed');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-time-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPY FAILED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-time-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-    }
-    initCopyCode();
-  }(window, document);
-</script>
- 
-<!-- CanvasBackground -->
-
-<script>
-  if (window.mermaid) {
-    mermaid.initialize({ theme: "forest" });
-  }
-</script>
+    <div class="image-viewer-container">
+    <img src="">
+</div>
 
 
     
-    
 
-  </div>
+
+</main>
+
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/navbarShrink.js"></script>
+
+<script src="/js/tools/scrollTopBottom.js"></script>
+
+<script src="/js/tools/lightDarkSwitch.js"></script>
+
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
 </body>
-
 </html>
